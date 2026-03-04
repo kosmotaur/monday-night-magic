@@ -43,15 +43,6 @@ section{padding:clamp(3rem,8vw,6rem) clamp(1.5rem,5vw,4rem)}
 .prize-place{font-family:var(--font-mono);font-size:.85rem;color:var(--gold);min-width:80px}
 .prize-reward{color:var(--cream)}
 .prize-note{font-size:.85rem;color:var(--cream-dim);font-style:italic}
-.card-strip{overflow-x:auto;white-space:nowrap;padding:1.5rem 0;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--gold-dim) transparent}
-.card-strip::-webkit-scrollbar{height:4px}
-.card-strip::-webkit-scrollbar-thumb{background:var(--gold-dim);border-radius:2px}
-.card-strip-inner{display:inline-flex;gap:1rem;padding:0 clamp(1.5rem,5vw,4rem)}
-.card-item{flex-shrink:0;width:180px;text-align:center;white-space:normal;transition:transform .3s ease}
-.card-item:hover{transform:translateY(-8px)}
-.card-item img{width:100%;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.5)}
-.card-item .card-name{font-size:.75rem;color:var(--cream-dim);margin-top:.5rem;font-family:var(--font-mono)}
-.card-item .card-archetype{font-size:.6rem;color:var(--gold-dim);text-transform:uppercase;letter-spacing:.1em}
 .judge{text-align:center;margin:2rem 0}
 .judge img{width:200px;height:200px;object-fit:cover;border-radius:50%;border:2px solid var(--gold-dim);filter:grayscale(.2)}
 .judge-name{font-family:var(--font-display);font-size:1.3rem;color:var(--cream);margin-top:1rem}
@@ -80,29 +71,27 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 <div class="flavor fade-in"><q>I've been all over this world. I even remember some of those places.</q><cite>— Goblin Guide</cite></div>
 <section class="fade-in"><div class="container">
 <h2>The Pub</h2>
-<p>The Great Southern sits at the foot of Gipsy Hill. Good beer, good light, the kind of place you don't want to leave. The pub is run by Zak — who doesn't know he's the Head Judge yet.</p>
+<p>The Great Southern sits at the foot of Gipsy Hill. Good beer, good light, the kind of place you don't want to leave. The pub is run by Zak — he resolves Pick Your Poison from behind the bar. If only you could pay for it with mana.</p>
 <div class="venue">
 <div><img src="photos/pub-exterior.jpg" alt="The Great Southern, Gipsy Hill"><div class="venue-caption">The Great Southern, Mountbatten Close, SE19</div></div>
 <div><img src="photos/pub-interior.jpg" alt="The Great Southern — interior"><div class="venue-caption">Good light, big tables, no mulligan required</div></div>
 </div>
 </div></section>
-<div class="card-strip fade-in"><div class="card-strip-inner">
-<div class="card-item"><img src="cards/goblin-guide_normal.jpg" alt="Goblin Guide"><div class="card-name">Goblin Guide</div><div class="card-archetype">Boros Aggro</div></div>
-<div class="card-item"><img src="cards/monastery-swiftspear_normal.jpg" alt="Monastery Swiftspear"><div class="card-name">Monastery Swiftspear</div><div class="card-archetype">Boros Aggro</div></div>
-<div class="card-item"><img src="cards/thalia-guardian-of-thraben_normal.jpg" alt="Thalia"><div class="card-name">Thalia</div><div class="card-archetype">Death & Taxes</div></div>
-<div class="card-item"><img src="cards/cranial-plating_normal.jpg" alt="Cranial Plating"><div class="card-name">Cranial Plating</div><div class="card-archetype">Affinity</div></div>
-<div class="card-item"><img src="cards/ragavan-nimble-pilferer_normal.jpg" alt="Ragavan"><div class="card-name">Ragavan</div><div class="card-archetype">4/5c Aggro</div></div>
-<div class="card-item"><img src="cards/primeval-titan_normal.jpg" alt="Primeval Titan"><div class="card-name">Primeval Titan</div><div class="card-archetype">Amulet Titan</div></div>
-<div class="card-item"><img src="cards/grapeshot_normal.jpg" alt="Grapeshot"><div class="card-name">Grapeshot</div><div class="card-archetype">Ruby Storm</div></div>
-<div class="card-item"><img src="cards/amulet-of-vigor_normal.jpg" alt="Amulet of Vigor"><div class="card-name">Amulet of Vigor</div><div class="card-archetype">Amulet Titan</div></div>
-<div class="card-item"><img src="cards/living-end_normal.jpg" alt="Living End"><div class="card-name">Living End</div><div class="card-archetype">Living End</div></div>
-<div class="card-item"><img src="cards/karn-liberated_normal.jpg" alt="Karn Liberated"><div class="card-name">Karn Liberated</div><div class="card-archetype">UrzaTron</div></div>
-<div class="card-item"><img src="cards/wurmcoil-engine_normal.jpg" alt="Wurmcoil Engine"><div class="card-name">Wurmcoil Engine</div><div class="card-archetype">UrzaTron</div></div>
-<div class="card-item"><img src="cards/the-one-ring_normal.jpg" alt="The One Ring"><div class="card-name">The One Ring</div><div class="card-archetype">Various</div></div>
-<div class="card-item"><img src="cards/emrakul-the-aeons-torn_normal.jpg" alt="Emrakul"><div class="card-name">Emrakul</div><div class="card-archetype">UrzaTron</div></div>
-<div class="card-item"><img src="cards/lightning-bolt_normal.jpg" alt="Lightning Bolt"><div class="card-name">Lightning Bolt</div><div class="card-archetype">Burn</div></div>
-<div class="card-item"><img src="cards/orcish-bowmasters_normal.jpg" alt="Orcish Bowmasters"><div class="card-name">Orcish Bowmasters</div><div class="card-archetype">Dimir Control</div></div>
-<div class="card-item"><img src="cards/thoughtseize_normal.jpg" alt="Thoughtseize"><div class="card-name">Thoughtseize</div><div class="card-archetype">Various</div></div>
+<div class="card-archetype">Boros Aggro</div></div>
+<div class="card-archetype">Death & Taxes</div></div>
+<div class="card-archetype">Affinity</div></div>
+<div class="card-archetype">4/5c Aggro</div></div>
+<div class="card-archetype">Amulet Titan</div></div>
+<div class="card-archetype">Ruby Storm</div></div>
+<div class="card-archetype">Amulet Titan</div></div>
+<div class="card-archetype">Living End</div></div>
+<div class="card-archetype">UrzaTron</div></div>
+<div class="card-archetype">UrzaTron</div></div>
+<div class="card-archetype">Various</div></div>
+<div class="card-archetype">UrzaTron</div></div>
+<div class="card-archetype">Burn</div></div>
+<div class="card-archetype">Dimir Control</div></div>
+<div class="card-archetype">Various</div></div>
 </div></div>
 <div class="flavor fade-in"><q>When nature calls, <em>run</em>.</q><cite>— Primeval Titan</cite></div>
 <section class="fade-in"><div class="container">
@@ -129,7 +118,7 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 <div class="judge">
 <img src="photos/fanny.png" alt="Fanny the Gipsy Hill Cat">
 <div class="judge-name">Fanny</div>
-<div class="judge-title">Head Judge (pending review)</div>
+<div class="judge-title">Head Judge</div>
 </div>
 </div></section>
 <footer><p>Card images © Wizards of the Coast · Data via <a href="https://scryfall.com">Scryfall</a></p></footer>
