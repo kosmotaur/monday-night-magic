@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Goblin Guide",
+    "flavor_text": "\"I've been all over this world. I even remember some of those places.\"",
+    "type_line": "Creature \u2014 Goblin Scout",
+    "mana_cost": "{R}",
+    "oracle_text": "Haste\nWhenever this creature attacks, defending player reveals the top card of their library. If it's a land card, that player puts it into their hand.",
+    "artist": "Filip Burburan",
+    "slug": "goblin-guide"
+  },
+  {
+    "name": "Monastery Swiftspear",
+    "flavor_text": "She focused her mind on the volcano's fury, and hers erupted in kind.",
+    "type_line": "Creature \u2014 Human Monk",
+    "mana_cost": "{R}",
+    "oracle_text": "Haste\nProwess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)",
+    "artist": "Gabor Szikszai",
+    "slug": "monastery-swiftspear"
+  },
+  {
+    "name": "Thalia, Guardian of Thraben",
+    "flavor_text": "\"Thraben belongs to the living. I will not rest until it is cleansed.\"",
+    "type_line": "Legendary Creature \u2014 Human Soldier",
+    "mana_cost": "{1}{W}",
+    "oracle_text": "First strike\nNoncreature spells cost {1} more to cast.",
+    "artist": "Magali Villeneuve",
+    "slug": "thalia-guardian-of-thraben"
+  },
+  {
+    "name": "Cranial Plating",
+    "flavor_text": "",
+    "type_line": "Artifact \u2014 Equipment",
+    "mana_cost": "{2}",
+    "oracle_text": "Equipped creature gets +1/+0 for each artifact you control.\n{B}{B}: Attach this Equipment to target creature you control.\nEquip {1}",
+    "artist": "Adam Rex",
+    "slug": "cranial-plating"
+  },
+  {
+    "name": "Ragavan, Nimble Pilferer",
+    "flavor_text": "",
+    "type_line": "Legendary Creature \u2014 Monkey Pirate",
+    "mana_cost": "{R}",
+    "oracle_text": "Whenever Ragavan deals combat damage to a player, create a Treasure token and exile the top card of that player's library. Until end of turn, you may cast that card.\nDash {1}{R} (You may cast this spell for its dash cost. If you do, it gains haste, and it's returned from the battlefield to its owner's hand at the beginning of the next end step.)",
+    "artist": "Simon Dominic",
+    "slug": "ragavan-nimble-pilferer"
+  },
+  {
+    "name": "Primeval Titan",
+    "flavor_text": "When nature calls, *run*.",
+    "type_line": "Creature \u2014 Giant",
+    "mana_cost": "{4}{G}{G}",
+    "oracle_text": "Trample\nWhenever this creature enters or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle.",
+    "artist": "Aleksi Briclot",
+    "slug": "primeval-titan"
+  },
+  {
+    "name": "Grapeshot",
+    "flavor_text": "Mages often seek to emulate the powerful relics lost to time and apocalypse.",
+    "type_line": "Sorcery",
+    "mana_cost": "{1}{R}",
+    "oracle_text": "Grapeshot deals 1 damage to any target.\nStorm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)",
+    "artist": "Clint Cearley",
+    "slug": "grapeshot"
+  },
+  {
+    "name": "Amulet of Vigor",
+    "flavor_text": "\"After years of study, I've learned an important lesson: the relics we watch may be watching us back.\"\n\u2014Anowon, the Ruin Sage",
+    "type_line": "Artifact",
+    "mana_cost": "{1}",
+    "oracle_text": "Whenever a permanent you control enters tapped, untap it.",
+    "artist": "Warren Mahy",
+    "slug": "amulet-of-vigor"
+  },
+  {
+    "name": "Living End",
+    "flavor_text": "",
+    "type_line": "Sorcery",
+    "mana_cost": "",
+    "oracle_text": "Suspend 3\u2014{2}{B}{B}\nEach player exiles all creature cards from their graveyard, then sacrifices all creatures they control, then puts all cards they exiled this way onto the battlefield.",
+    "artist": "Greg Staples",
+    "slug": "living-end"
+  },
+  {
+    "name": "Karn Liberated",
+    "flavor_text": "",
+    "type_line": "Legendary Planeswalker \u2014 Karn",
+    "mana_cost": "{7}",
+    "oracle_text": "+4: Target player exiles a card from their hand.\n\u22123: Exile target permanent.\n\u221214: Restart the game, leaving in exile all non-Aura permanent cards exiled with Karn. Then put those cards onto the battlefield under your control.",
+    "artist": "Jason Chan",
+    "slug": "karn-liberated"
+  },
+  {
+    "name": "Wurmcoil Engine",
+    "flavor_text": "",
+    "type_line": "Artifact Creature \u2014 Phyrexian Wurm",
+    "mana_cost": "{6}",
+    "oracle_text": "Deathtouch, lifelink\nWhen this creature dies, create a 3/3 colorless Phyrexian Wurm artifact creature token with deathtouch and a 3/3 colorless Phyrexian Wurm artifact creature token with lifelink.",
+    "artist": "Raymond Swanland",
+    "slug": "wurmcoil-engine"
+  },
+  {
+    "name": "The One Ring",
+    "flavor_text": "",
+    "type_line": "Legendary Artifact",
+    "mana_cost": "{4}",
+    "oracle_text": "Indestructible\nWhen The One Ring enters, if you cast it, you gain protection from everything until your next turn.\nAt the beginning of your upkeep, you lose 1 life for each burden counter on The One Ring.\n{T}: Put a burden counter on The One Ring, then draw a card for each burden counter on The One Ring.",
+    "artist": "Veli Nystr\u00f6m",
+    "slug": "the-one-ring"
+  },
+  {
+    "name": "Emrakul, the Aeons Torn",
+    "flavor_text": "",
+    "type_line": "Legendary Creature \u2014 Eldrazi",
+    "mana_cost": "{15}",
+    "oracle_text": "This spell can't be countered.\nWhen you cast this spell, take an extra turn after this one.\nFlying, protection from spells that are one or more colors, annihilator 6\nWhen Emrakul is put into a graveyard from anywhere, its owner shuffles their graveyard into their library.",
+    "artist": "Mark Tedin",
+    "slug": "emrakul-the-aeons-torn"
+  },
+  {
+    "name": "Lightning Bolt",
+    "flavor_text": "The sparkmage shrieked, calling on the rage of the storms of his youth. To his surprise, the sky responded with a fierce energy he'd never thought to see again.",
+    "type_line": "Instant",
+    "mana_cost": "{R}",
+    "oracle_text": "Lightning Bolt deals 3 damage to any target.",
+    "artist": "Christopher Moeller",
+    "slug": "lightning-bolt"
+  },
+  {
+    "name": "Urza's Tower",
+    "flavor_text": "Urza studied the creations of the Thran not simply to learn from them, but to surpass them.",
+    "type_line": "Land \u2014 Urza's Tower",
+    "mana_cost": "",
+    "oracle_text": "{T}: Add {C}. If you control an Urza's Mine and an Urza's Power-Plant, add {C}{C}{C} instead.",
+    "artist": "Brian Sn\u00f5ddy",
+    "slug": "urzas-tower"
+  },
+  {
+    "name": "Orcish Bowmasters",
+    "flavor_text": "",
+    "type_line": "Creature \u2014 Orc Archer",
+    "mana_cost": "{1}{B}",
+    "oracle_text": "Flash\nWhen this creature enters and whenever an opponent draws a card except the first one they draw in each of their draw steps, this creature deals 1 damage to any target. Then amass Orcs 1.",
+    "artist": "Maxim Kostin",
+    "slug": "orcish-bowmasters"
+  },
+  {
+    "name": "Thoughtseize",
+    "flavor_text": "\"Any dream is a robust harvest. Still, I prefer the timeworn dreams, heavy with import, that haunt the obsessive mind.\"",
+    "type_line": "Sorcery",
+    "mana_cost": "{B}",
+    "oracle_text": "Target player reveals their hand. You choose a nonland card from it. That player discards that card. You lose 2 life.",
+    "artist": "Aleksi Briclot",
+    "slug": "thoughtseize"
+  }
+]
