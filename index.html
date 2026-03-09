@@ -12,6 +12,8 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.19.0/dist/maplibre-gl.css">
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.19.0/dist/maplibre-gl.js"></script>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--gold:#c6a35a;--gold-dim:#8a7340;--dark:#0e0d0b;--card:#1a1814;--cream:#ebe0c8;--cream-dim:#b8a88a;--font-display:'Playfair Display',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--font-mono:'JetBrains Mono',monospace}
@@ -56,6 +58,12 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 .fine-print{font-size:.8rem;color:var(--cream-dim);font-style:italic;margin-top:1.5rem}
 .to-block{font-family:var(--font-mono);font-size:.8rem;color:var(--cream-dim);margin-top:2rem;padding:1rem;border:1px solid #2a2520;background:rgba(26,24,20,.5)}
 .to-block strong{color:var(--gold)}
+.venue-map{grid-column:1/-1;height:300px;border:1px solid var(--gold-dim)}
+.venue-map .maplibregl-popup-content{background:var(--card);color:var(--cream);font-family:var(--font-body);font-size:.9rem;padding:.6rem .8rem;border:1px solid var(--gold-dim);border-radius:0;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.venue-map .maplibregl-popup-tip{border-top-color:var(--gold-dim)}
+.venue-map .maplibregl-popup-close-button{color:var(--cream-dim)}
+.pub-link{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-dim)}
+.pub-link:hover{border-bottom-color:var(--gold)}
 </style>
 </head>
 <body>
@@ -76,6 +84,8 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 <div class="venue">
 <div><img src="photos/pub-exterior.jpg" alt="The Great Southern, Gipsy Hill"><div class="venue-caption">The Great Southern, Mountbatten Close, SE19</div></div>
 <div><img src="photos/pub-interior.jpg" alt="The Great Southern — interior"><div class="venue-caption">Good light, big tables, no mulligan required</div></div>
+<div style="grid-column:1/-1"><img src="photos/pub-interior-2.jpg" alt="The Great Southern — fireplace and seating" style="height:340px"><div class="venue-caption">Brick, leather, chandeliers — room to spread out your board state</div></div>
+<div style="grid-column:1/-1"><div id="map" class="venue-map"></div><div class="venue-caption">79 Gipsy Hill, SE19 1QH — <a href="https://www.thegreatsouthernpub.co.uk" target="_blank" rel="noopener" class="pub-link">thegreatsouthernpub.co.uk</a></div></div>
 </div>
 </div></section>
 <div class="flavor fade-in"><q>When nature calls, <em>run</em>.</q><cite>— Primeval Toilet</cite></div>
@@ -87,7 +97,7 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 <div class="detail-item"><h3>Doors</h3><p>7pm</p></div>
 <div class="detail-item"><h3>Rounds</h3><p>3–4, best of 3</p></div>
 <div class="detail-item"><h3>Deck</h3><p>60 cards + 15 sideboard</p></div>
-<div class="detail-item"><h3>Where</h3><p>The Great Southern, Mountbatten Close, SE19</p></div>
+<div class="detail-item"><h3>Feedback</h3><p>Got something on the stack? Let it resolve — <a href="mailto:marek.stasikowski@me.com" style="color:var(--gold);text-decoration:none">marek.stasikowski@me.com</a></p></div>
 </div>
 <div class="prizes">
 <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--gold);margin-bottom:1rem;font-style:italic">"The sweeter the prize, the more ruinous the price."</h3>
@@ -110,6 +120,9 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 <script>
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.15});
 document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+const map=new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/dark',center:[-0.0838,51.4238],zoom:12,attributionControl:true});
+const mk=document.createElement('div');mk.style.cssText='width:14px;height:14px;background:#c6a35a;border:2px solid #ebe0c8;border-radius:50%;box-shadow:0 0 8px rgba(198,163,90,.6)';
+new maplibregl.Marker({element:mk}).setLngLat([-0.0838,51.4238]).setPopup(new maplibregl.Popup({offset:14}).setHTML('<strong>The Great Southern</strong><br>79 Gipsy Hill, SE19 1QH')).addTo(map);
 </script>
 </body>
 </html>
