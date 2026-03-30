@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="deploy-id" content="mnm-20260323-194143-25b91df">
+<meta name="deploy-id" content="mnm-20260330-135922-25b91df">
 <base href="/monday-night-magic/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monday Night Magic — Modern at The Great Southern</title>
-<meta name="description" content="Monday Night Modern MTG at The Great Southern, Gipsy Hill. Free entry. Bar tab prizes. Every Monday.">
-<meta property="og:title" content="Monday Night Magic — Modern">
-<meta property="og:description" content="Free entry Modern MTG at The Great Southern, Gipsy Hill SE19. Bar tab prizes. Every Monday.">
+<title>Monday Night Magic — The Great Southern</title>
+<meta name="description" content="Monday Night Magic at The Great Southern, Gipsy Hill. Modern, Commander, or just jam games. Free entry. Bar tab prizes. Every Monday.">
+<meta property="og:title" content="Monday Night Magic — The Great Southern">
+<meta property="og:description" content="Monday Night Magic at The Great Southern, Gipsy Hill SE19. Modern, Commander, casual games. Free entry. Every Monday.">
 <meta property="og:image" content="https://fullytapped.tech/monday-night-magic/photos/pub-exterior.jpg">
 <meta property="og:url" content="https://fullytapped.tech/monday-night-magic/">
 <meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.19.0/dist/maplibre-gl.css">
@@ -66,6 +67,17 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 .venue-map .maplibregl-popup-close-button{color:var(--cream-dim)}
 .pub-link{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-dim)}
 .pub-link:hover{border-bottom-color:var(--gold)}
+.section-intro{font-size:1.1rem;color:var(--cream-dim);max-width:640px;margin-bottom:2.5rem}
+.format-heading{font-family:var(--font-display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--gold);margin:2.5rem 0 1rem;font-style:italic;border-bottom:1px solid #2a2520;padding-bottom:.5rem}
+.deck-group-label{font-family:var(--font-mono);font-size:.75rem;color:var(--gold-dim);text-transform:uppercase;letter-spacing:.12em;margin:1.5rem 0 .8rem}
+.deck-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1rem;margin-bottom:1.5rem}
+.deck-card{display:flex;flex-direction:column;background:var(--card);border:1px solid #2a2520;text-decoration:none;color:var(--cream);transition:border-color .3s ease}
+a.deck-card:hover{border-color:var(--gold)}
+.deck-card img{width:100%;aspect-ratio:626/457;object-fit:cover;filter:grayscale(.3) brightness(.85);transition:filter .3s ease}
+a.deck-card:hover img{filter:grayscale(0) brightness(1)}
+.deck-card span{display:block;padding:.5rem .6rem;font-family:var(--font-mono);font-size:.75rem;color:var(--cream)}
+.deck-card .deck-set{padding-top:0;color:var(--gold-dim);font-size:.65rem}
+@media(max-width:400px){.deck-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}}
 </style>
 </head>
 <body>
@@ -74,8 +86,8 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 <img src="cards/lightning-bolt_art_crop.jpg" alt=""><img src="cards/urzas-tower_art_crop.jpg" alt=""><img src="cards/orcish-bowmasters_art_crop.jpg" alt=""><img src="cards/thoughtseize_art_crop.jpg" alt="">
 </div>
 <div class="hero-content">
-<h1>Monday Night Magic<span>Modern at The Great Southern</span></h1>
-<p class="hero-sub">Gipsy Hill, SE19. Free entry. Bar tab prizes. The kind of pub you don't want to leave even after you've mulliganed to four.</p>
+<h1>Monday Night Magic<span>The Great Southern</span></h1>
+<p class="hero-sub">Gipsy Hill, SE19. Modern. Commander. Or just show up and jam some Magic over a pint. Free entry. Bar tab prizes.</p>
 <div class="hero-date">EVERY MONDAY</div>
 </div>
 </div>
@@ -93,13 +105,12 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 <div class="flavor fade-in"><q>When nature calls, <em>run</em>.</q><cite>— Primeval Toilet</cite></div>
 <section class="fade-in"><div class="container">
 <h2>The Details</h2>
+<p class="section-intro">Doors at 7pm, entry is free. Bring a Modern deck, a Commander deck, or just yourself — there'll be games to play and beer to drink.</p>
+<h3 class="format-heading">Modern</h3>
 <div class="details-grid">
 <div class="detail-item"><h3>Format</h3><p>Modern Constructed</p></div>
-<div class="detail-item"><h3>Entry</h3><p>Free</p></div>
-<div class="detail-item"><h3>Doors</h3><p>7pm</p></div>
-<div class="detail-item"><h3>Rounds</h3><p>3–4, best of 3</p></div>
 <div class="detail-item"><h3>Deck</h3><p>60 cards + 15 sideboard</p></div>
-<div class="detail-item"><h3>Feedback</h3><p>Got something on the stack? Let it resolve — <a href="mailto:marek.stasikowski@me.com" style="color:var(--gold);text-decoration:none">marek.stasikowski@me.com</a></p></div>
+<div class="detail-item"><h3>Rounds</h3><p>3–4, best of 3 — numbers permitting</p></div>
 </div>
 <div class="prizes">
 <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--gold);margin-bottom:1rem;font-style:italic">"The sweeter the prize, the more ruinous the price."</h3>
@@ -107,6 +118,34 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 <div class="prize-row"><span class="prize-place">2nd – 3rd</span><span class="prize-reward">Up to £15 bar tab</span></div>
 <div class="prize-row"><span class="prize-place">4th – 8th</span><span class="prize-reward">A free drink</span><span class="prize-note">(within reason — Zak's watching)</span></div>
 </div>
+<p class="fine-print">Swiss rounds and full prize pool depend on turnout. If it's a quieter night, we just play Magic.</p>
+<h3 class="format-heading">Commander</h3>
+<div class="details-grid">
+<div class="detail-item"><h3>Format</h3><p>Commander / EDH</p></div>
+<div class="detail-item"><h3>Players</h3><p>Free-for-all, up to 4 per pod</p></div>
+<div class="detail-item"><h3>Deck</h3><p>100-card singleton</p></div>
+</div>
+<div class="prizes">
+<div class="prize-row"><span class="prize-place">Pod winner</span><span class="prize-reward">Up to £15 bar tab</span></div>
+</div>
+<p class="fine-print">Or just rock up and jam Commander — no obligation to play for prizes.</p>
+<h3 class="format-heading">Don't have a deck?</h3>
+<p style="color:var(--cream-dim);margin-bottom:1.5rem">Marek will have a stash of loaners on hand. Just ask.</p>
+<h4 class="deck-group-label">Modern</h4>
+<div class="deck-grid">
+<a class="deck-card" href="https://moxfield.com/decks/ZI-2gSlT90yCwHdXiHntVw" target="_blank" rel="noopener"><img src="cards/archon-of-cruelty_art_crop.jpg" alt="Archon of Cruelty"><span>Grixis Reanimator</span></a>
+<a class="deck-card" href="https://moxfield.com/decks/3kzGsPWJ2U6nO0C46Chrag" target="_blank" rel="noopener"><img src="cards/cori-steel-cutter_art_crop.jpg" alt="Cori-Steel Cutter"><span>Prowess</span></a>
+<a class="deck-card" href="https://moxfield.com/decks/U6kvgEA6UkOSmOObyX0sXQ" target="_blank" rel="noopener"><img src="cards/colossus-hammer_art_crop.jpg" alt="Colossus Hammer"><span>Hammer Time</span></a>
+<a class="deck-card" href="https://moxfield.com/decks/Nj5vBak3xUKmwzOALoSiVw" target="_blank" rel="noopener"><img src="cards/leyline-of-abundance_art_crop.jpg" alt="Leyline of Abundance"><span>Badger Ramp</span></a>
+<a class="deck-card" href="https://moxfield.com/decks/Np8FQLwaqUeUDYNCMwb2JA" target="_blank" rel="noopener"><img src="cards/eldritch-evolution_art_crop.jpg" alt="Eldritch Evolution"><span>Neoform</span></a>
+</div>
+<h4 class="deck-group-label">Commander Precons</h4>
+<div class="deck-grid">
+<a class="deck-card" href="https://scryfall.com/sets/m3c" target="_blank" rel="noopener"><img src="cards/ulalek-fused-atrocity_art_crop.jpg" alt="Ulalek, Fused Atrocity"><span>Eldrazi Incursion</span><span class="deck-set">MH3</span></a>
+<a class="deck-card" href="https://scryfall.com/sets/c17" target="_blank" rel="noopener"><img src="cards/inalla-archmage-ritualist_art_crop.jpg" alt="Inalla, Archmage Ritualist"><span>Arcane Wizardry</span><span class="deck-set">C17</span></a>
+<a class="deck-card" href="https://scryfall.com/sets/onc" target="_blank" rel="noopener"><img src="cards/ixhel-scion-of-atraxa_art_crop.jpg" alt="Ixhel, Scion of Atraxa"><span>Corrupting Influence</span><span class="deck-set">ONE</span></a>
+</div>
+<div class="detail-item" style="margin-top:2rem"><h3>Feedback</h3><p>Got something on the stack? Let it resolve — <a href="mailto:marek.stasikowski@me.com" style="color:var(--gold);text-decoration:none">marek.stasikowski@me.com</a></p></div>
 <div class="to-block"><strong>TO:</strong> Marek. Slow play will be noted. Unsporting conduct will be escalated. Any player found confusing a fetchland with Vampiric Tutor will be exiled.</div>
 </div></section>
 <div class="flavor fade-in"><q>The barmage shrieked, calling on the volume of the pints of his youth.</q><cite>— Pinting Bolt</cite></div>
@@ -122,6 +161,7 @@ h2{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);font-weigh
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.15});
 document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 const map=new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/dark',center:[-0.0838,51.4238],zoom:12,attributionControl:true});
+map.on('styleimagemissing',e=>{map.addImage(e.id,{width:1,height:1,data:new Uint8Array(4)})});
 const mk=document.createElement('div');mk.style.cssText='width:14px;height:14px;background:#c6a35a;border:2px solid #ebe0c8;border-radius:50%;box-shadow:0 0 8px rgba(198,163,90,.6)';
 new maplibregl.Marker({element:mk}).setLngLat([-0.0838,51.4238]).setPopup(new maplibregl.Popup({offset:14}).setHTML('<strong>The Great Southern</strong><br>79 Gipsy Hill, SE19 1QH')).addTo(map);
 </script>
